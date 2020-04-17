@@ -1,0 +1,100 @@
+@import "./vars.scss";
+
+ul {
+  margin-top: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+a {
+  color: $cta-teal;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: $hover-teal;
+    img {
+      opacity: .9;
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+button,input,optgroup,select,textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0
+}
+
+#content-container {
+  background-color: #fff;
+}
+
+@media(min-width: 768px) {
+
+  body{
+    min-width: 1280px;
+  }
+
+  #content-container {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-col {
+    width: 740px;
+    min-height: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (orientation: portrait) {
+  body {
+    min-width: auto;
+  }
+
+  #content-container {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-col {
+    float: none !important;
+    margin: auto;
+    width: 100%;
+    min-height: 1000px;
+  }
+
+  .anchor-tag {
+    position: relative;
+    top: -50px;
+    display: block;
+  }
+}
+
+@media only screen and (min-device-width: 1024px)
+  and (max-device-width: 1366px) and (orientation: portrait) {
+  #main-col {
+    width: 740px;
+  }
+}
+
+:global{
+  .white {
+    color: #fff;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .bump-red-background {
+    background-color: #ff6e6e;
+  }
+}
