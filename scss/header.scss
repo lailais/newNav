@@ -233,10 +233,6 @@ label {
 }
 
 .ProfileTrigger.open {
-  border-bottom: 1px solid rgb(255, 255, 255);
-  border-left: 1px solid rgb(229, 229, 229);
-  border-right: 1px solid rgb(229, 229, 229);
-
   button svg path {
     transform: scale(1);
     visibility: visible;
@@ -270,7 +266,7 @@ label {
   background-color: rgb(255, 255, 255);
   visibility: visible;
   opacity: 1;
-  transform: translateX(100%);
+  transform: translateX(0%);
   will-change: transform;
   overflow: hidden;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.45s ease 0s;
@@ -291,6 +287,7 @@ label {
   }
 
   div:nth-of-type(2) {
+    margin-right: 0.9375rem;
     span {
     display: block;
     font-family: LeagueGothic;
@@ -367,6 +364,24 @@ label {
   }
 }
 
+
+.background.open {
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: 8;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  will-change: transform;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.45s ease 0s;
+}
+
 @media (min-width: 768px) {
   .HeaderWrap {
     height: 3.75rem;
@@ -410,6 +425,12 @@ label {
     margin-left: 0rem;
   }
 
+  .ProfileTrigger.open {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(229, 229, 229);
+    border-right: 1px solid rgb(229, 229, 229);
+  }
+
   .Profile.open>.ProfileWrapper {
     width: 15.625rem;
     height: auto;
@@ -421,6 +442,10 @@ label {
     border-right: 1px solid rgb(229, 229, 229);
     border-left: 1px solid rgb(229, 229, 229);
     border-bottom: 1px solid rgb(229, 229, 229);
+  }
+
+  .background.open {
+    display: none;
   }
 }
 
@@ -462,19 +487,45 @@ label {
     display: none;
   }
 
-  .Profile.open>.ProfileWrapper  {
-    width: 20rem;
-    height: calc(100% - 3.125rem);
-    top: 3.125rem;
-    position: fixed;
-    z-index: 9;
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0%);
-    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.45s ease 0s;
-    border-right: none;
-    border-left: none;
+  .ProfileTrigger.open {
     border-bottom: none;
-    overflow: auto;
+    border-left: none;
+    border-right: none;
+  }
+
+  .Profile.open {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+
+    .ProfileWrapper  {
+      width: 20rem;
+      height: calc(100% - 3.125rem);
+      top: 3.125rem;
+      position: fixed;
+      z-index: 9;
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0%);
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.45s ease 0s;
+      border-right: none;
+      border-left: none;
+      border-bottom: none;
+      overflow: auto;
+    }
+  }
+
+  .background.open {
+    display: block;
+  }
+}
+
+@media (max-width: 1279px) and (min-width: 769px) {
+  .Profile {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    height: 100%;
   }
 }
