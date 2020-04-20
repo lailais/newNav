@@ -1,0 +1,102 @@
+.footer {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1.625rem 1.25rem;
+  background-color: #f6f6f6; }
+  .footer ul,
+  .footer li {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0; }
+  .footer div:nth-of-type(3) section {
+    width: 100%; }
+  .footer div {
+    justify-content: flex-start;
+    display: flex !important; }
+    .footer div svg path {
+      fill: #6d6d6d; }
+  @media (min-width: 767px) {
+    .footer {
+      margin-left: 12.5rem;
+      grid-template-columns: repeat(3, 1fr); }
+      .footer div:nth-of-type(3) {
+        padding-left: 4px; }
+        .footer div:nth-of-type(3) section {
+          width: 100%; } }
+
+.FooterColumn {
+  display: flex; }
+  .FooterColumn:nth-of-type(3) {
+    flex-direction: column; }
+  .FooterColumn section {
+    width: 50%;
+    padding-right: 0.625rem; }
+    .FooterColumn section ul {
+      margin-bottom: 1.623rem; }
+      .FooterColumn section ul li a {
+        display: flex;
+        margin-bottom: 0.4375rem;
+        align-content: center;
+        font-family: Larsseit-Light;
+        font-size: 0.75rem;
+        letter-spacing: 0rem;
+        color: black; }
+
+.title {
+  display: block;
+  font-family: Larsseit-Bold;
+  font-size: 0.75rem;
+  letter-spacing: 0.010625rem;
+  text-transform: uppercase;
+  color: #c2383f;
+  margin-bottom: 0.5625rem; }
+
+.title.followUs {
+  margin-bottom: 0rem;
+  margin-top: 1.25rem; }
+
+.SitesWrap svg:nth-of-type(1) {
+  width: 3.375rem;
+  height: 1rem;
+  margin-right: 1.25rem; }
+
+.AppDownloadsWrap a {
+  margin-right: 0.3125rem; }
+  .AppDownloadsWrap a:last-of-type {
+    margin-right: 0; }
+  .AppDownloadsWrap a img {
+    width: 6.4375rem;
+    height: 1.9375rem;
+    margin-right: 0px; }
+
+.SocialLinks {
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  display: flex; }
+  @media (min-width: 768px) {
+    .SocialLinks {
+      display: flex;
+      -webkit-box-pack: end;
+      justify-content: flex-end;
+      padding-right: 0.5rem;
+      border-right: 1px solid #e5e5e5; } }
+  .SocialLinks a {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.125rem;
+    padding: 0.5rem; }
+    .SocialLinks a svg {
+      pointer-events: none;
+      height: 100%;
+      width: 100%; }
+
+.Copyright {
+  display: block;
+  margin-top: 1.25rem;
+  font-family: Larsseit-Light;
+  font-size: 0.75rem;
+  letter-spacing: 0.010625rem;
+  color: #999999; }
+
+/*# sourceMappingURL=footer.css.map */

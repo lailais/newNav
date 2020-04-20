@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Larsseit-Medium';
+  src: local("Larsseit-Medium");
+  src: url("https://static.thebump.com/webfonts3/Larrseit/2FFC79_6_0.woff2") format("woff2");
+  font-display: swap; }
+@font-face {
+  font-family: 'Larsseit-Light';
+  src: local("Larsseit-Light");
+  src: url("https://static.thebump.com/webfonts3/Larrseit/2FFC79_0_0.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'LeagueGothic';
+  src: local("LeagueGothic");
+  src: url("https://static.thebump.com/webfonts3/leaguegothic_regular/leaguegothic-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Larsseit-LightItalic';
+  src: local("Larsseit-LightItalic");
+  src: url("https://static.thebump.com/webfonts3/Larrseit/2FFC79_3_0.woff2") format("woff2");
+  font-display: swap; }
+@font-face {
+  font-family: 'Larsseit-Bold';
+  src: local("Larsseit-Bold");
+  src: url("https://static.thebump.com/webfonts3/Larrseit/2FFC79_4_0.woff2") format("woff2");
+  font-display: swap; }
+@font-face {
+  font-family: 'Larsseit-BoldItalic';
+  src: local("Larsseit-BoldItalic");
+  src: url("https://static.thebump.com/webfonts3/Larrseit/2FFC79_1_0.woff2") format("woff2");
+  font-display: swap; }
+@font-face {
+  font-family: 'Argos-Light';
+  src: url("https://static.thebump.com/webfonts3/argos_light/ArgosLig-webfont.eot");
+  src: url("https://static.thebump.com/webfonts3/argos_light/ArgosLig-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.thebump.com/webfonts3/argos_light/ArgosLig-webfont.woff2") format("woff2"), url("https://static.thebump.com/webfonts3/argos_light/ArgosLig-webfont.woff") format("woff"), url("https://static.thebump.com/webfonts3/argos_light/ArgosLig-webfont.ttf") format("truetype"), url("https://static.thebump.com/webfonts3/argos_light/ArgosLig-webfont.svg#argoslight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SofiaProSemiBold';
+  src: url("https://static.thebump.com/webfonts/sofiapro_semibold/SofiaProSemiBold-webfont.eot");
+  src: url("https://static.thebump.com/webfonts/sofiapro_semibold/SofiaProSemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.thebump.com/webfonts/sofiapro_semibold/SofiaProSemiBold-webfont.woff2") format("woff2"), url("https://static.thebump.com/webfonts/sofiapro_semibold/SofiaProSemiBold-webfont.woff") format("woff"), url("https://static.thebump.com/webfonts/sofiapro_semibold/SofiaProSemiBold-webfont.ttf") format("truetype"), url("https://static.thebump.com/webfonts/sofiapro_semibold/SofiaProSemiBold-webfont.svg#sofia_prosemi_bold") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'SofiaProLight';
+  src: url("https://static.thebump.com/webfonts/sofiapro_light/SofiaProLight-webfont.eot");
+  src: url("https://static.thebump.com/webfonts/sofiapro_light/SofiaProLight-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.thebump.com/webfonts/sofiapro_light/SofiaProLight-webfont.woff2") format("woff2"), url("https://static.thebump.com/webfonts/sofiapro_light/SofiaProLight-webfont.woff") format("woff"), url("https://static.thebump.com/webfonts/sofiapro_light/SofiaProLight-webfont.ttf") format("truetype"), url("https://static.thebump.com/webfonts/sofiapro_light/SofiaProLight-webfont.svg#sofia_prolight") format("svg");
+  font-display: swap; }
+@font-face {
+  font-family: 'Larsseit-Regular';
+  src: url("https://static.thebump.com/webfonts3/Larrseit/2FFC79_B_0.eot");
+  src: url("https://static.thebump.com/webfonts3/Larrseit/2FFC79_B_0.eot?#iefix") format("embedded-opentype"), url("https://static.thebump.com/webfonts3/Larrseit/2FFC79_B_0.woff2") format("woff2"), url("https://static.thebump.com/webfonts3/Larrseit/2FFC79_B_0.woff") format("woff"), url("https://static.thebump.com/webfonts3/Larrseit/2FFC79_B_0.ttf") format("truetype");
+  font-display: swap; }
+@font-face {
+  font-family: 'Argos-Regular';
+  src: url("https://static.thebump.com/webfonts3/argos_regular/ArgosReg-webfont.eot");
+  src: url("https://static.thebump.com/webfonts3/argos_regular/ArgosReg-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.thebump.com/webfonts3/argos_regular/ArgosReg-webfont.woff2") format("woff2"), url("https://static.thebump.com/webfonts3/argos_regular/ArgosReg-webfont.woff") format("woff"), url("https://static.thebump.com/webfonts3/argos_regular/ArgosReg-webfont.ttf") format("truetype"), url("https://static.thebump.com/webfonts3/argos_regular/ArgosReg-webfont.svg#argoslight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+   * 1. Set default font family to sans-serif.
+   * 2. Prevent iOS text size adjust after orientation change, without disabling
+   *    user zoom.
+   */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+     * Remove default margin.
+     */
+body {
+  margin: 0;
+  font-family: helvetica neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff; }
+
+b,
+strong,
+.bold {
+  font-family: Larsseit-Bold; }
+
+i,
+em,
+.italic {
+  font-family: Larsseit-LightItalic; }
+
+.bold-italic,
+em strong,
+em b,
+strong em,
+b em {
+  font-family: Larsseit-BoldItalic; }
+
+.mainContainer {
+  position: relative;
+  margin: 0; }
+
+@media (min-width: 768px) {
+  .desktopLeftNav {
+    position: absolute;
+    top: 80px;
+    bottom: 0; }
+    .desktopLeftNav > nav {
+      position: absolute;
+      top: 0px;
+      bottom: 0px; }
+
+  .desktopFooter {
+    clear: both; }
+
+  .mainContainer {
+    position: relative;
+    max-width: 1280px;
+    margin: auto; }
+    .mainContainer > article {
+      margin-top: 60px; } }
+    @media (min-width: 768px) and (min-width: 768px) {
+      .mainContainer > article {
+        display: flex;
+        flex-direction: column;
+        margin-left: 200px;
+        margin-top: 0;
+        min-height: 1000px; } }
+
+@media (min-width: 768px) {
+  footer {
+    width: 1280px; } }
+@media (max-width: 1024px) {
+  .checkTablet :global(#content-container) {
+    padding-top: 60px;
+    margin-left: 0; }
+  .checkTablet footer {
+    width: auto; } }
+@media (min-width: 1025px) {
+  .checkTablet {
+    min-width: 1280px; } }
+
+/*# sourceMappingURL=layout.css.map */
