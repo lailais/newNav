@@ -1,4 +1,5 @@
 button {
+  outline: none;
   color: inherit;
   background-color: transparent;
   padding: 0px;
@@ -190,8 +191,21 @@ label {
   position: relative; }
 
 .ProfileWrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 3.125rem);
+  width: 20rem;
+  z-index: 9;
+  position: fixed;
+  top: 3.125rem;
+  right: 0px;
+  background-color: white;
   visibility: hidden;
-  opacity: 0; }
+  opacity: 0;
+  transform: translateX(100%);
+  will-change: transform;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.45s ease 0s; }
 
 .Profile.open > .ProfileWrapper {
   display: flex;
@@ -299,6 +313,8 @@ label {
 
 @media (min-width: 768px) {
   .HeaderWrap {
+    margin: 0 auto;
+    max-width: 1280px;
     height: 3.75rem;
     position: relative;
     z-index: 10;
@@ -328,7 +344,7 @@ label {
     border-right: 1px solid #d9d9d9; }
 
   .SocialLinks.open {
-    border-right: 0; }
+    border-right: 1px solid transparent; }
 
   .ProfileTrigger button {
     margin-left: 0rem; }
