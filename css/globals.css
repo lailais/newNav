@@ -27,43 +27,12 @@ button, input, optgroup, select, textarea {
 
 @media (min-width: 768px) {
   body {
-    min-width: 1280px; }
-
-  #content-container {
-    margin-left: 200px;
-    display: flex;
-    flex-direction: column; }
-
-  #main-col {
-    width: 740px;
-    min-height: 1000px; } }
+    min-width: 1280px; } }
 @media only screen and (max-width: 1366px) and (orientation: portrait) {
   body {
-    min-width: auto; }
-
-  #content-container {
-    margin-left: 200px;
-    display: flex;
-    flex-direction: column; }
-
-  #main-col {
-    float: none !important;
-    margin: auto;
-    width: 100%;
-    min-height: 1000px; }
-
-  .anchor-tag {
-    position: relative;
-    top: -50px;
-    display: block; } }
+    min-width: auto; } }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   #main-col {
     width: 740px; } }
-:global .white {
-  color: #fff; }
-:global .center {
-  text-align: center; }
-:global .bump-red-background {
-  background-color: #ff6e6e; }
 
 /*# sourceMappingURL=globals.css.map */

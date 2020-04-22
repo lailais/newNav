@@ -40,41 +40,11 @@ button,input,optgroup,select,textarea {
   body{
     min-width: 1280px;
   }
-
-  #content-container {
-    margin-left: 200px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #main-col {
-    width: 740px;
-    min-height: 1000px;
-  }
 }
 
 @media only screen and (max-width: 1366px) and (orientation: portrait) {
   body {
     min-width: auto;
-  }
-
-  #content-container {
-    margin-left: 200px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #main-col {
-    float: none !important;
-    margin: auto;
-    width: 100%;
-    min-height: 1000px;
-  }
-
-  .anchor-tag {
-    position: relative;
-    top: -50px;
-    display: block;
   }
 }
 
@@ -82,19 +52,5 @@ button,input,optgroup,select,textarea {
   and (max-device-width: 1366px) and (orientation: portrait) {
   #main-col {
     width: 740px;
-  }
-}
-
-:global{
-  .white {
-    color: #fff;
-  }
-
-  .center {
-    text-align: center;
-  }
-
-  .bump-red-background {
-    background-color: #ff6e6e;
   }
 }

@@ -1,5 +1,17 @@
 const bumpHost = 'https://www.thebump.com'
+
+function stopPropagation(e) {
+  let ev = e || window.event
+  if(ev && ev.stopPropagation) {
+    ev.stopPropagation()
+  } else {
+    //IE
+    ev.cancelBubble = true
+  }
+}
+
 function goToChildMenu(childID) {
+  stopPropagation()
   var primaryMenu = document.getElementsByClassName('PrimaryNavTopLevelListItemWrap')
   if (primaryMenu) {
     primaryMenu[childID].getElementsByClassName('Pane')[0].style.cssText += `
@@ -19,7 +31,7 @@ function goToChildMenu(childID) {
 }
 
 function goBackToPrimaryMenu(childID) {
-
+  stopPropagation()
   var primaryMenu = document.getElementsByClassName('PrimaryNavTopLevelListItemWrap')
   if (primaryMenu) {
     primaryMenu[childID].getElementsByClassName('Pane')[0].style.cssText = ''

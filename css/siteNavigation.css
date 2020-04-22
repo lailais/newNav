@@ -13,16 +13,14 @@
   opacity: 0;
   transform: translateX(-100%);
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.45s ease;
-  will-change: transform;
-  opacity: 1;
-  transform: translateX(0%); }
+  will-change: transform; }
   .SiteNavigation svg {
     vertical-align: top; }
   @media (min-width: 768px) {
     .SiteNavigation {
       height: calc(100% - 3.75rem);
       width: 12.5rem;
-      top: 3.125rem;
+      top: 3.75rem;
       position: absolute;
       opacity: 1;
       transform: translateX(0%); } }
@@ -33,9 +31,11 @@
       position: fixed;
       top: 3.125rem;
       opacity: 0;
-      transform: translateX(-100%);
-      opacity: 1;
-      transform: translateX(0%); } }
+      transform: translateX(-100%); } }
+
+.SiteNavigation.open {
+  opacity: 1;
+  transform: translateX(0%); }
 
 .NavEl {
   display: flex;

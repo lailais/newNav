@@ -113,6 +113,8 @@ b em {
 .mainContainer {
   position: relative;
   margin: 0; }
+  .mainContainer img {
+    vertical-align: middle; }
 
 @media (min-width: 768px) {
   .desktopLeftNav {

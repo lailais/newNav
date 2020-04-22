@@ -23,293 +23,248 @@ button {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px 0px;
   border-bottom: 1px solid #d9d9d9; }
-
-label {
-  max-width: 100%;
-  margin-bottom: 5px; }
-
-.HeaderWrap svg {
-  vertical-align: top; }
-
-.tbHeader {
-  position: relative;
-  height: inherit;
-  display: grid;
-  grid-template-columns: 4.75rem 1fr 4.75rem 0px;
-  -webkit-box-align: center;
-  align-items: center; }
-
-.MobileNavTrigger {
-  height: 100%;
-  display: flex;
-  -webkit-box-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  align-items: center;
-  padding-left: 0.5rem; }
-  .MobileNavTrigger button svg {
-    width: 2rem;
-    height: 2rem; }
-    .MobileNavTrigger button svg path {
-      fill: #333333;
-      transform-origin: center center;
-      transform: scale(1);
-      transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s; }
-    .MobileNavTrigger button svg path:nth-of-type(2) {
-      transform: scale(0.5);
-      visibility: hidden;
-      opacity: 0; }
-
-.MobileNavTrigger.open button svg path:nth-of-type(1) {
-  transform: scale(0.75);
-  visibility: hidden;
-  opacity: 0; }
-.MobileNavTrigger.open button svg path:nth-of-type(2) {
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1; }
-
-.Lockup {
-  width: 100%;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center; }
-
-.Lockup a svg {
-  width: 6.5rem;
-  height: 1.25rem; }
-
-.Lockup a svg path, .SearchForm svg path {
-  fill: #ff6e6e; }
-
-.SearchForm {
-  width: 100%;
-  z-index: 10;
-  display: none;
-  padding: 1.875rem 1.25rem 1.5rem; }
-
-.SearchForm label {
-  position: relative; }
-
-.SearchForm label svg {
-  position: absolute;
-  top: -0.125rem;
-  left: 0.375rem;
-  height: 1.1875rem;
-  width: 1.1875rem; }
-
-.SearchForm label input {
-  position: relative;
-  height: 2rem;
-  width: 100%;
-  background-color: transparent;
-  -webkit-appearance: none;
-  font-size: 1rem;
-  font-family: Larsseit-Light;
-  padding: 0.125rem 0rem 0rem 1.75rem;
-  border-radius: 0px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent transparent #d9d9d9;
-  border-image: initial;
-  border-bottom: 1px solid #d9d9d9; }
-
-.SocialLinks {
-  display: none; }
-
-.SocialLinks a {
-  height: 2rem;
-  width: 2rem;
-  margin-right: 0.125rem;
-  padding: 0.5rem; }
-
-.SocialLinks a svg {
-  pointer-events: none;
-  height: 100%;
-  width: 100%; }
-
-.ProfileTrigger {
-  height: 100%;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  justify-content: flex-end; }
-
-.ProfileTrigger a {
-  font-family: Larsseit-Regular;
-  font-size: 0.75rem;
-  color: black;
-  letter-spacing: 0.010625rem;
-  text-transform: uppercase;
-  padding-right: 0.875rem; }
-
-.ProfileTrigger button {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  margin-left: 0.9375rem;
-  outline: none;
-  border-radius: 50%;
-  overflow: hidden; }
-
-.ProfileTrigger button svg {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0px);
-  height: 2rem;
-  width: 2rem; }
-
-.ProfileTrigger button img {
-  height: 2rem;
-  width: 2rem;
-  transform: scale(1);
-  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  border-radius: 50%; }
-
-.ProfileTrigger button svg path {
-  transform-origin: center center;
-  transform: scale(0.5);
-  visibility: hidden;
-  opacity: 0;
-  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s; }
-
-.ProfileTrigger button svg circle {
-  display: none; }
-
-.ProfileTrigger.open button svg path {
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1; }
-.ProfileTrigger.open button img {
-  visibility: hidden;
-  opacity: 0; }
-
-.Profile {
-  position: relative; }
-
-.ProfileWrapper {
-  display: flex;
-  flex-direction: column;
-  height: calc(100% - 3.125rem);
-  width: 20rem;
-  z-index: 9;
-  position: fixed;
-  top: 3.125rem;
-  right: 0px;
-  background-color: white;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateX(100%);
-  will-change: transform;
-  overflow: hidden;
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.45s ease 0s; }
-
-.Profile.open > .ProfileWrapper {
-  display: flex;
-  flex-direction: column;
-  height: calc(100% - 3.125rem);
-  width: 20rem;
-  z-index: 9;
-  position: fixed;
-  top: 3.125rem;
-  right: 0px;
-  background-color: white;
-  visibility: visible;
-  opacity: 1;
-  transform: translateX(0%);
-  will-change: transform;
-  overflow: hidden;
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.45s ease 0s; }
-
-.MyOverview {
-  display: flex;
-  padding: 1.25rem 0px;
-  border-bottom: 1px solid #e5e5e5; }
-  .MyOverview div:nth-of-type(1) {
-    margin: 0px 0.9375rem; }
-    .MyOverview div:nth-of-type(1) img {
-      width: 3.125rem;
-      height: 3.125rem;
-      border-radius: 50%; }
-  .MyOverview div:nth-of-type(2) {
-    margin-right: 0.9375rem; }
-    .MyOverview div:nth-of-type(2) span {
-      display: block;
-      font-family: LeagueGothic;
-      font-size: 1.5625rem;
-      color: #ff6e6e; }
-    .MyOverview div:nth-of-type(2) a {
-      color: #007a77;
-      font-family: Larsseit-Medium;
-      font-size: 0.75rem;
-      letter-spacing: 0.015625rem;
-      text-transform: uppercase; }
-  .MyOverview .ChildrenInfo {
-    color: #666666;
-    font-family: Larsseit-Light;
-    list-style-type: none;
-    margin: 0.25rem 0px 1.25rem;
-    padding: 0px; }
-    .MyOverview .ChildrenInfo li {
-      margin-top: 0.25rem; }
-
-.MyStuff {
-  font-family: LeagueGothic;
-  font-size: 1.25rem;
-  padding: 1.25rem;
-  border-bottom: 1px solid #e5e5e5; }
-  .MyStuff h4 {
-    font-weight: normal; }
-  .MyStuff ul, .MyStuff li {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px; }
-  .MyStuff a {
-    color: #007a77;
-    font-size: 0.875rem;
-    font-family: Larsseit-Light;
-    letter-spacing: 0px;
-    line-height: 2rem; }
-
-.SignOut {
-  margin: 1.25rem; }
-  .SignOut .Anchor {
-    height: 2.5rem;
+  .HeaderWrap label {
+    max-width: 100%;
+    margin-bottom: 5px; }
+  .HeaderWrap svg {
+    vertical-align: top; }
+  .HeaderWrap .tbHeader {
+    position: relative;
+    height: inherit;
+    display: grid;
+    grid-template-columns: 4.75rem 1fr 4.75rem 0px;
+    -webkit-box-align: center;
+    align-items: center; }
+  .HeaderWrap .MobileNavTrigger {
+    height: 100%;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 0.5rem; }
+    .HeaderWrap .MobileNavTrigger button svg {
+      width: 2rem;
+      height: 2rem; }
+      .HeaderWrap .MobileNavTrigger button svg path {
+        fill: #333333;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s; }
+      .HeaderWrap .MobileNavTrigger button svg path:nth-of-type(2) {
+        transform: scale(0.5);
+        visibility: hidden;
+        opacity: 0; }
+  .HeaderWrap .MobileNavTrigger.open button svg path:nth-of-type(1) {
+    transform: scale(0.75);
+    visibility: hidden;
+    opacity: 0; }
+  .HeaderWrap .MobileNavTrigger.open button svg path:nth-of-type(2) {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1; }
+  .HeaderWrap .Lockup {
     width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center; }
+  .HeaderWrap .Lockup a svg {
+    width: 6.5rem;
+    height: 1.25rem; }
+  .HeaderWrap .Lockup a svg path, .HeaderWrap .SearchForm svg path {
+    fill: #ff6e6e; }
+  .HeaderWrap .SearchForm {
+    width: 100%;
+    z-index: 10;
+    display: none;
+    padding: 1.875rem 1.25rem 1.5rem; }
+  .HeaderWrap .SearchForm label {
+    position: relative; }
+  .HeaderWrap .SearchForm label svg {
+    position: absolute;
+    top: -0.125rem;
+    left: 0.375rem;
+    height: 1.1875rem;
+    width: 1.1875rem; }
+  .HeaderWrap .SearchForm label input {
+    position: relative;
+    height: 2rem;
+    width: 100%;
+    background-color: transparent;
+    -webkit-appearance: none;
+    font-size: 1rem;
+    font-family: Larsseit-Light;
+    padding: 0.125rem 0rem 0rem 1.75rem;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent transparent #d9d9d9;
+    border-image: initial;
+    border-bottom: 1px solid #d9d9d9; }
+  .HeaderWrap .SocialLinks {
+    display: none; }
+  .HeaderWrap .SocialLinks a {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.125rem;
+    padding: 0.5rem; }
+  .HeaderWrap .SocialLinks a svg {
+    pointer-events: none;
+    height: 100%;
+    width: 100%; }
+  .HeaderWrap .ProfileTrigger {
+    height: 100%;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    color: #007a77;
-    font-family: Larsseit-Medium;
-    font-size: 0.875rem;
-    letter-spacing: 0.03125rem;
+    -webkit-box-pack: end;
+    justify-content: flex-end; }
+  .HeaderWrap .ProfileTrigger a {
+    font-family: Larsseit-Regular;
+    font-size: 0.75rem;
+    color: black;
+    letter-spacing: 0.010625rem;
     text-transform: uppercase;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #007a77;
-    border-image: initial;
-    border-radius: 1.25rem; }
-
-.background.open {
-  cursor: pointer;
-  user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  z-index: 8;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  will-change: transform;
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.45s ease 0s; }
+    padding-right: 0.875rem; }
+  .HeaderWrap .ProfileTrigger button {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-left: 0.9375rem;
+    outline: none;
+    border-radius: 50%;
+    overflow: hidden; }
+  .HeaderWrap .ProfileTrigger button svg {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0px);
+    height: 2rem;
+    width: 2rem; }
+  .HeaderWrap .ProfileTrigger button img {
+    height: 2rem;
+    width: 2rem;
+    transform: scale(1);
+    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    border-radius: 50%; }
+  .HeaderWrap .ProfileTrigger button svg path {
+    transform-origin: center center;
+    transform: scale(0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s; }
+  .HeaderWrap .ProfileTrigger button svg circle {
+    display: none; }
+  .HeaderWrap .ProfileTrigger.open button svg path {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1; }
+  .HeaderWrap .ProfileTrigger.open button img {
+    visibility: hidden;
+    opacity: 0; }
+  .HeaderWrap .Profile {
+    position: relative; }
+  .HeaderWrap .ProfileWrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 3.125rem);
+    width: 20rem;
+    z-index: 9;
+    position: fixed;
+    top: 3.125rem;
+    right: 0px;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    will-change: transform;
+    overflow: hidden;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.45s ease 0s; }
+  .HeaderWrap .Profile.open > .ProfileWrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 3.125rem);
+    width: 20rem;
+    z-index: 9;
+    position: fixed;
+    top: 3.125rem;
+    right: 0px;
+    background-color: white;
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%);
+    will-change: transform;
+    overflow: hidden;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.45s ease 0s; }
+  .HeaderWrap .MyOverview {
+    display: flex;
+    padding: 1.25rem 0px;
+    border-bottom: 1px solid #e5e5e5; }
+    .HeaderWrap .MyOverview div:nth-of-type(1) {
+      margin: 0px 0.9375rem; }
+      .HeaderWrap .MyOverview div:nth-of-type(1) img {
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 50%; }
+    .HeaderWrap .MyOverview div:nth-of-type(2) {
+      margin-right: 0.9375rem; }
+      .HeaderWrap .MyOverview div:nth-of-type(2) span {
+        display: block;
+        font-family: LeagueGothic;
+        font-size: 1.5625rem;
+        color: #ff6e6e; }
+      .HeaderWrap .MyOverview div:nth-of-type(2) a {
+        color: #007a77;
+        font-family: Larsseit-Medium;
+        font-size: 0.75rem;
+        letter-spacing: 0.015625rem;
+        text-transform: uppercase; }
+    .HeaderWrap .MyOverview .ChildrenInfo {
+      color: #666666;
+      font-family: Larsseit-Light;
+      list-style-type: none;
+      margin: 0.25rem 0px 1.25rem;
+      padding: 0px; }
+      .HeaderWrap .MyOverview .ChildrenInfo li {
+        margin-top: 0.25rem; }
+  .HeaderWrap .MyStuff {
+    font-family: LeagueGothic;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    border-bottom: 1px solid #e5e5e5; }
+    .HeaderWrap .MyStuff h4 {
+      font-weight: normal; }
+    .HeaderWrap .MyStuff ul, .HeaderWrap .MyStuff li {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px; }
+    .HeaderWrap .MyStuff a {
+      color: #007a77;
+      font-size: 0.875rem;
+      font-family: Larsseit-Light;
+      letter-spacing: 0px;
+      line-height: 2rem; }
+  .HeaderWrap .SignOut {
+    margin: 1.25rem; }
+    .HeaderWrap .SignOut .Anchor {
+      height: 2.5rem;
+      width: 100%;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      color: #007a77;
+      font-family: Larsseit-Medium;
+      font-size: 0.875rem;
+      letter-spacing: 0.03125rem;
+      text-transform: uppercase;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #007a77;
+      border-image: initial;
+      border-radius: 1.25rem; }
 
 @media (min-width: 768px) {
   .HeaderWrap {
@@ -321,62 +276,50 @@ label {
     top: initial;
     left: initial;
     box-shadow: none; }
-
-  .tbHeader {
-    margin: 0px auto;
-    grid-template-columns: 9.125rem 1fr 1fr 4.75rem 0px;
-    max-width: 80rem; }
-
-  .MobileNavTrigger {
-    display: none; }
-
-  .SearchForm {
-    width: 25.625rem;
-    margin-left: 3.4375rem;
-    display: block;
-    padding: 0rem 1.25rem; }
-
-  .SocialLinks {
-    display: flex;
-    -webkit-box-pack: end;
-    justify-content: flex-end;
-    padding-right: 0.5rem;
-    border-right: 1px solid #d9d9d9; }
-
-  .SocialLinks.open {
-    border-right: 1px solid transparent; }
-
-  .ProfileTrigger button {
-    margin-left: 0rem; }
-
-  .ProfileTrigger.open {
-    border-bottom: 1px solid white;
-    border-left: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5; }
-
-  .Profile.open > .ProfileWrapper {
-    width: 15.625rem;
-    height: auto;
-    top: 3.75rem;
-    position: absolute;
-    z-index: 10;
-    transform: translateX(0%);
-    transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-    border-right: 1px solid #e5e5e5;
-    border-left: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5; }
-
-  .background.open {
-    display: none; } }
+    .HeaderWrap .tbHeader {
+      margin: 0px auto;
+      grid-template-columns: 9.125rem 1fr 1fr 4.75rem 0px;
+      max-width: 80rem; }
+    .HeaderWrap .MobileNavTrigger {
+      display: none; }
+    .HeaderWrap .SearchForm {
+      width: 25.625rem;
+      margin-left: 3.4375rem;
+      display: block;
+      padding: 0rem 1.25rem; }
+    .HeaderWrap .SocialLinks {
+      display: flex;
+      -webkit-box-pack: end;
+      justify-content: flex-end;
+      padding-right: 0.5rem;
+      border-right: 1px solid #d9d9d9; }
+    .HeaderWrap .SocialLinks.open {
+      border-right: 1px solid transparent; }
+    .HeaderWrap .ProfileTrigger button {
+      margin-left: 0rem; }
+    .HeaderWrap .ProfileTrigger.open {
+      border-bottom: 1px solid white;
+      border-left: 1px solid #e5e5e5;
+      border-right: 1px solid #e5e5e5; }
+    .HeaderWrap .Profile.open > .ProfileWrapper {
+      width: 15.625rem;
+      height: auto;
+      top: 3.75rem;
+      position: absolute;
+      z-index: 10;
+      transform: translateX(0%);
+      transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+      border-right: 1px solid #e5e5e5;
+      border-left: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5; } }
 @media (min-width: 1280px) {
-  .Profile {
+  .HeaderWrap .Profile {
     position: absolute;
     right: 0px;
     top: 3.75rem;
     z-index: 10;
     height: 100%; }
-
-  .Profile.open > .ProfileWrapper {
+  .HeaderWrap .Profile.open > .ProfileWrapper {
     top: 0px; } }
 @media only screen and (max-width: 1366px) and (orientation: portrait) {
   .HeaderWrap {
@@ -386,46 +329,38 @@ label {
     top: 0px;
     left: 0px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px 0px; }
-
-  .tbHeader {
-    grid-template-columns: 4.75rem 1fr 4.75rem 0px;
-    max-width: 80rem;
-    margin: 0px auto; }
-
-  .MobileNavTrigger {
-    display: flex; }
-
-  .SearchForm, .SocialLinks {
-    display: none; }
-
-  .ProfileTrigger.open {
-    border-bottom: none;
-    border-left: none;
-    border-right: none; }
-
-  .Profile.open {
-    border-bottom: none;
-    border-left: none;
-    border-right: none; }
-    .Profile.open .ProfileWrapper {
-      width: 20rem;
-      height: calc(100% - 3.125rem);
-      top: 3.125rem;
-      position: fixed;
-      z-index: 9;
-      visibility: visible;
-      opacity: 1;
-      transform: translateX(0%);
-      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.45s ease 0s;
-      border-right: none;
-      border-left: none;
+    .HeaderWrap .tbHeader {
+      grid-template-columns: 4.75rem 1fr 4.75rem 0px;
+      max-width: 80rem;
+      margin: 0px auto; }
+    .HeaderWrap .MobileNavTrigger {
+      display: flex; }
+    .HeaderWrap .SearchForm, .HeaderWrap .SocialLinks {
+      display: none; }
+    .HeaderWrap .ProfileTrigger.open {
       border-bottom: none;
-      overflow: auto; }
-
-  .background.open {
-    display: block; } }
+      border-left: none;
+      border-right: none; }
+    .HeaderWrap .Profile.open {
+      border-bottom: none;
+      border-left: none;
+      border-right: none; }
+      .HeaderWrap .Profile.open .ProfileWrapper {
+        width: 20rem;
+        height: calc(100% - 3.125rem);
+        top: 3.125rem;
+        position: fixed;
+        z-index: 9;
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0%);
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.45s ease 0s;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        overflow: auto; } }
 @media (max-width: 1279px) and (min-width: 769px) {
-  .Profile {
+  .HeaderWrap .Profile {
     position: fixed;
     right: 0px;
     top: 0px;

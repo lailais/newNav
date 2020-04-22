@@ -1,6 +1,7 @@
 const DOMContentLoadedCB = function() {
   const ProfileTrigger = document.getElementById('ProfileTrigger')
   const MobileNavTrigger = document.getElementById('MobileNavTrigger')
+  const SiteNavigation = document.getElementById('SiteNavigation')
   const SocialLinks = document.querySelector('.tbHeader .SocialLinks')
   const Profile = document.querySelector('.tbHeader .Profile')
   const background = document.getElementById('background')
@@ -24,6 +25,7 @@ const DOMContentLoadedCB = function() {
     const isProfileOpen = ProfileTrigger.classList.contains('open')
     closeProfile()
     MobileNavTrigger.classList.toggle("open")
+    SiteNavigation.classList.toggle("open")
 
     if(!isProfileOpen) {
       background.classList.toggle("open")
@@ -44,7 +46,7 @@ const DOMContentLoadedCB = function() {
 
   closeSiteNavigation = () => {
     MobileNavTrigger.classList.remove("open")
-    //todo
+    SiteNavigation.classList.remove("open")
   }
 
   closeBackground = () => {
@@ -52,7 +54,7 @@ const DOMContentLoadedCB = function() {
   }
 
   stopPropagation = (e) => {
-    var ev = e || window.event
+    let ev = e || window.event
     if(ev && ev.stopPropagation) {
       ev.stopPropagation()
     } else {
