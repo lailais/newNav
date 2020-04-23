@@ -1,12 +1,17 @@
 button {
-  border: none;
   outline: none;
+  color: inherit;
   background-color: transparent;
   padding: 0px;
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
-  padding-left: 0px; }
+  padding-left: 0px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  font: inherit; }
 
 .HeaderWrap {
   height: 3.125rem;
@@ -27,7 +32,7 @@ button {
     position: relative;
     height: inherit;
     display: grid;
-    grid-template-columns: 0px 4.75rem 1fr 4.75rem 0px 0px;
+    grid-template-columns: 4.75rem 1fr 4.75rem 0px;
     -webkit-box-align: center;
     align-items: center; }
   .HeaderWrap .MobileNavTrigger {
@@ -261,14 +266,61 @@ button {
       border-image: initial;
       border-radius: 1.25rem; }
 
+@media (min-width: 768px) {
+  .HeaderWrap {
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 3.75rem;
+    position: relative;
+    z-index: 10;
+    top: initial;
+    left: initial;
+    box-shadow: none; }
+    .HeaderWrap .tbHeader {
+      margin: 0px auto;
+      grid-template-columns: 9.125rem 1fr 1fr 4.75rem 0px;
+      max-width: 80rem; }
+    .HeaderWrap .MobileNavTrigger {
+      display: none; }
+    .HeaderWrap .SearchForm {
+      width: 25.625rem;
+      margin-left: 3.4375rem;
+      display: block;
+      padding: 0rem 1.25rem; }
+    .HeaderWrap .SocialLinks {
+      display: flex;
+      -webkit-box-pack: end;
+      justify-content: flex-end;
+      padding-right: 0.5rem;
+      border-right: 1px solid #d9d9d9; }
+    .HeaderWrap .SocialLinks.open {
+      border-right: 1px solid transparent; }
+    .HeaderWrap .ProfileTrigger button {
+      margin-left: 0rem; }
+    .HeaderWrap .ProfileTrigger.open {
+      border-bottom: 1px solid white;
+      border-left: 1px solid #e5e5e5;
+      border-right: 1px solid #e5e5e5; }
+    .HeaderWrap .Profile.open > .ProfileWrapper {
+      width: 15.625rem;
+      height: auto;
+      top: 3.75rem;
+      position: absolute;
+      z-index: 10;
+      transform: translateX(0%);
+      transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+      border-right: 1px solid #e5e5e5;
+      border-left: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5; } }
 @media (min-width: 1280px) {
-  .HeaderWrap .tbHeader {
-    grid-template-columns: 1fr 4.75rem 70.5rem 4.75rem 0px 1fr; }
-  .HeaderWrap .Profile.open > .ProfileWrapper {
+  .HeaderWrap .Profile {
     position: absolute;
-    top: 25px;
-    right: 0;
-    height: 100vh; } }
+    right: 0px;
+    top: 3.75rem;
+    z-index: 10;
+    height: 100%; }
+  .HeaderWrap .Profile.open > .ProfileWrapper {
+    top: 0px; } }
 @media only screen and (max-width: 1366px) and (orientation: portrait) {
   .HeaderWrap {
     height: 3.125rem;
@@ -278,7 +330,7 @@ button {
     left: 0px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px 0px; }
     .HeaderWrap .tbHeader {
-      grid-template-columns: 0px 4.75rem 1fr 4.75rem 0px 0px;
+      grid-template-columns: 4.75rem 1fr 4.75rem 0px;
       max-width: 80rem;
       margin: 0px auto; }
     .HeaderWrap .MobileNavTrigger {

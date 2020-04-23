@@ -1,0 +1,46 @@
+.background {
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: 8;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  will-change: transform;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.45s ease 0s; }
+
+.background.open {
+  visibility: visible;
+  opacity: 1; }
+
+.ContentWrap {
+  min-height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.125rem; }
+
+@media (min-width: 768px) {
+  .background {
+    display: none; }
+
+  .ContentWrap {
+    margin-left: 12.5rem;
+    margin-top: 0rem; } }
+@media (min-width: 1025px) {
+  .mainContainer {
+    min-width: 1280px; } }
+@media only screen and (max-width: 1366px) and (orientation: portrait) {
+  .background {
+    display: block; }
+
+  .ContentWrap {
+    margin-left: 0px;
+    margin-top: 3.125rem; } }
+
+/*# sourceMappingURL=index.css.map */
