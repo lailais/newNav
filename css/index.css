@@ -559,7 +559,8 @@ button {
     padding: 1.25rem;
     border-bottom: 1px solid #e5e5e5; }
     .HeaderWrap .MyStuff h4 {
-      font-weight: normal; }
+      font-weight: normal;
+      margin: 0; }
     .HeaderWrap .MyStuff ul, .HeaderWrap .MyStuff li {
       list-style-type: none;
       padding: 0px;

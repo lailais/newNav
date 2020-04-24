@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/utils/lodash.js"></script>
+    <script src='./js/utils/moment.js'></script>
+    <script src='./js/member.js'></script>
+    <script src='./js/birthdates.js'></script>
     <script src="./js/header.js"></script>
   </head>
   <body>
@@ -39,7 +43,7 @@
         </div>
 
          <!-- logout -->
-         <!-- <div class="ProfileTrigger"><a href="https://www.thebump.com/login">Log in</a></div> -->
+         <div id="login" class="ProfileTrigger"><a href="https://www.thebump.com/login">Log in</a></div>
 
         <!-- login -->
         <div id="ProfileTrigger" class="ProfileTrigger" tabindex="-1">
@@ -54,44 +58,9 @@
           </button>
         </div>
 
-        <div class="Profile">
+        <div id="Profile" class="Profile">
           <div class="ProfileWrapper">
-            <div class="MyOverview">
-              <div>
-                <img
-                  src="https://qa-avatars.thebump.com/avatars/9353466736561127"
-                  alt
-                />
-              </div>
-              <div>
-                <span>Test </span>
-                <ul class="ChildrenInfo">
-                  <li>Expecting &quot;Test&quot; October 1</li>
-                  <li>Xxs, newborn</li>
-                  <li>Fafa, 3 mo</li>
-                  <li>Dasdad, 7 mo</li>
-                </ul>
-                <a href="https://www.thebump.com/join/profile">Edit My Profile</a
-                >
-              </div>
-            </div>
-            <div class="MyStuff">
-              <h4>My Stuff</h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.thebump.com/pregnancy-week-by-week/16-weeks-pregnant"
-                    >Pregnancy Week by Week</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.thebump.com/baby-month-by-month/0-month-old-baby"
-                    >Baby Month by Month</a
-                  >
-                </li>
-              </ul>
-            </div>
+            <div class="MyOverview"></div>
             <div class="SignOut">
               <a href="https://www.thebump.com/logout" class="Anchor">Sign Out</a>
             </div>
