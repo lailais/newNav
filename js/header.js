@@ -1,5 +1,3 @@
-const bumpHost = 'https://www.thebump.com/'
-
 const DOMContentLoadedCB = function() {
   const login = document.getElementById('login')
   const ProfileTrigger = document.getElementById('ProfileTrigger')
@@ -87,7 +85,7 @@ const DOMContentLoadedCB = function() {
 
   if(member) {
     login.style.display = 'none'
-    renderProfile({member, bumpHost})
+    renderProfile({member, bumpHost: config.bumpHost})
   } else {
     ProfileTrigger.style.display = 'none'
     Profile.style.display = 'none'
